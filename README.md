@@ -5,7 +5,7 @@ The executable file transmits and reads data through console.log("RESULTJSON[", 
 将推理引擎mnn & OpenCV 集成到electron项目,主要采取可执行文件进行推理            
 可执行文件通过console.log("RESULTJSON[", ageJson, "]")进行数据传输和读取        
 
-![demo image](./assets/demo.png)
+![demo image](https://github.com/nibilin33/mnn-opencv-electron/raw/main/assets/demo.png)  
 
 ## Create New Electron Project
 
