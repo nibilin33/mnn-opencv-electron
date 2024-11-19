@@ -1,0 +1,25 @@
+{
+  "name": "mnn-age-googlenet",
+  "version": "1.0.0",
+  "description": "MNN Age GoogleNet inference using WebAssembly",
+  "main": "test.js",
+  "bin": {
+    "mnn-age-googlenet": "test.js"
+  },
+  "scripts": {
+    "build:bin": "pkg . --out-path=bin/ && cp -r bin/*  ../bin"
+  },
+  "dependencies": {
+    "jpeg-js": "^0.4.4",
+    "opencv.js": "^1.2.1",
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "scripts": "test.js",
+    "assets": [
+      "mnn_age_googlenet.wasm",
+      "age_googlenet.mnn",
+      "test_lite_age_googlenet.jpg"
+    ]
+  }
+}
