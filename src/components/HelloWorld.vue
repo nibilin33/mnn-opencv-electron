@@ -28,6 +28,7 @@ export default {
       })
       .catch(error => {
         console.error('Error:', error)
+        this.aiData = error
       })
     }
   }

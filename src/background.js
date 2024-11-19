@@ -22,8 +22,8 @@ function initIpcMain() {
       .then((res) => {
         event.sender.send(`ai:callModel:${requestId}`, { status: 'success', res })
       })
-      .catch(() => {
-        event.sender.send(`ai:callModel:${requestId}`, { status: 'fail' })
+      .catch((error) => {
+        event.sender.send(`ai:callModel:${requestId}`, { status: 'fail', error })
       })
   })
 }
